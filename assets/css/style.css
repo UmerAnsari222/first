@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 16px;
+}
+main {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100vh;
+  overflow: auto;
+}
+
+main .logo-section {
+  padding: 1rem;
+}
+
+main .logo-section .logo {
+  background-color: rgba(102, 106, 246, 255);
+  height: 6rem;
+  width: 6rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+main .logo-section .logo h1 {
+  text-align: center;
+  padding-top: 1.3rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 200;
+}
+.main-text h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(49, 68, 108, 255);
+  margin-bottom: 2rem;
+}
+
+main .signup-section {
+  width: 60%;
+  /* background-color: red; */
+}
+main .signup-section form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+form .group-control {
+  width: 100%;
+}
+form .group-control label {
+  display: block;
+  font-size: 0.7rem;
+  color: rgba(67, 74, 84, 255);
+  font-weight: 500;
+}
+
+form .group-control input {
+  width: 100%;
+  outline: none;
+  padding: 6px 1rem;
+  font-size: 16px;
+  border: 0.3px solid rgba(229, 226, 226, 255);
+  margin-top: 0.2rem;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.btn-primary {
+  background-color: rgba(102, 106, 246, 255);
+}
+
+main .social-section h5 {
+  text-align: center;
+  color: rgba(190, 196, 205, 255);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+main .social-section .social-icons {
+  /* display: flex;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+main .social-section .social-icons img {
+  height: 60px;
+  width: 60px;
+}
+
+main .login {
+  position: absolute;
+  bottom: 15px;
+}
+
+main .login p {
+  color: rgba(190, 196, 205, 255);
+  font-size: 13px;
+}
+main .login p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(102, 106, 246, 255);
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    width: 90%;
+  }
+}
+
+header {
+  background-color: rgba(102, 106, 246, 255);
+  padding: 1.7rem 1.5rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: fixed;
+  width: 100%;
+}
+
+header .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header .container .category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .category h1 {
+  color: #fff;
+  font-size: 1.5rem;
+
+  margin-left: 50px;
+  font-weight: 400;
+}
+header .container .category img {
+  position: absolute;
+  right: 30px;
+}
+section {
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
+}
+section .work-section {
+  width: 90%;
+  margin: 0 auto;
+}
+section .work-section .sutdy div:first-child {
+  height: 15px;
+  width: 15px;
+  background-color: rgba(54, 188, 155, 255);
+  border-radius: 50%;
+}
