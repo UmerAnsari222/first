@@ -167,16 +167,249 @@ header .container .category img {
 }
 section {
   position: absolute;
-  margin-top: 100px;
+  margin-top: 130px;
   width: 100%;
+  z-index: -1;
 }
-section .work-section {
+.main-section {
   width: 90%;
   margin: 0 auto;
 }
-section .work-section .sutdy div:first-child {
-  height: 15px;
-  width: 15px;
+/* .content {
+  position: absolute;
+  top: 400px;
+  z-index: -1;
+  margin-top: 30px;
+} */
+section .work-section .sutdy .dot-green {
+  height: 10px;
+  width: 10px;
   background-color: rgba(54, 188, 155, 255);
   border-radius: 50%;
+  position: absolute;
+  top: 24px;
+}
+section .work-section .meet .dot-orange {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(244, 134, 60, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+}
+section .work-section .work .dot-yellow {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(247, 188, 63, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+}
+section .work-section .home .dot-blue {
+  height: 10px;
+  width: 10px;
+  background-color: rgba(102, 106, 246, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+}
+
+.work-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+section .work-section .sutdy {
+  background-color: rgba(229, 249, 244, 255);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  position: relative;
+}
+section .work-section .sutdy .text {
+  margin-top: 10px;
+  margin-left: 1.4rem;
+}
+section .work-section .sutdy .text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+section .work-section .sutdy .text p {
+  font-size: 0.8rem;
+  color: rgba(157, 166, 177, 255);
+}
+
+section .work-section .meet .text {
+  margin-top: 10px;
+  margin-left: 1.4rem;
+}
+section .work-section .meet .text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+section .work-section .meet .text p {
+  font-size: 0.8rem;
+  color: rgba(157, 166, 177, 255);
+}
+
+section .work-section .work .text {
+  margin-top: 10px;
+  margin-left: 1.4rem;
+}
+section .work-section .work .text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+section .work-section .work .text p {
+  font-size: 0.8rem;
+  color: rgba(157, 166, 177, 255);
+}
+
+section .work-section .home .text {
+  margin-top: 10px;
+  margin-left: 1.4rem;
+}
+section .work-section .home .text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+section .work-section .home .text p {
+  font-size: 0.8rem;
+  color: rgba(157, 166, 177, 255);
+}
+section .work-section .meet {
+  background-color: rgba(251, 232, 219, 255);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  position: relative;
+}
+section .work-section .work {
+  background-color: rgba(252, 246, 232, 255);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  position: relative;
+}
+section .work-section .home {
+  background-color: rgba(234, 234, 246, 255);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.button-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 2rem;
+}
+
+.button-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(49, 68, 108, 255);
+  width: 100%;
+  padding: 2rem 1rem;
+  height: 80px;
+  position: fixed;
+}
+.add-section {
+  background-color: rgba(102, 106, 246, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.add-section a {
+  margin-top: 2px;
+}
+footer .bottom-nav {
+  width: 90%;
+}
+
+.left-links-section {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  margin-left: 1rem;
+}
+.right-links-section {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  margin-left: 1rem;
+}
+
+.categories,
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.calender img {
+  margin-left: 0.5rem;
+}
+.calendar,
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+.categories a {
+  font-size: 12px;
+  position: absolute;
+  bottom: -15px;
+  color: #fff;
+}
+.task a {
+  font-size: 12px;
+  position: absolute;
+  bottom: -15px;
+  color: #fff;
+}
+
+.calender a {
+  font-size: 12px;
+  position: absolute;
+  bottom: -15px;
+  color: #fff;
+}
+
+.profile a {
+  font-size: 12px;
+  position: absolute;
+  bottom: -15px;
+  color: #fff;
 }
